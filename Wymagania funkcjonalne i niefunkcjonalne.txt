@@ -1,0 +1,62 @@
+Wymagania funkcjonalne:
+F01)
+System przechowuje i przetwarza dane o kinach, salach kinowych, miejscach, filmach, seansach, klientach, rezerwacjach, biletach i płatnościach.
+F02)
+Klient przegląda repertuar kina.
+F03)
+Klient rezerwuje miejsce na seans.
+F04)
+Klient anuluje rezerwację miejsca na seans.
+F05)
+Klient kupuje bilet na seans.
+F06)
+Pracownik Kina wprowadza film do repertuaru kina.
+F07)
+Pracownik Kina zarządza seansami filmowymi.
+F08)
+Kierownik Kina zarządza danymi sal kinowych i znajdujących się w nich miejsc.
+F09)
+Kierownik Kina zarządza typami seansów.
+F10)
+Kierownik Kina zarządza danymi kin.
+
+
+Wymagania niefunkcjonalne:
+N01)
+Działania użytkowników systemu na filmach, seansach, rezerwacjach, biletach i płatnościach są obsługiwane i automatyzowane przez system.
+N02)
+Działania użytkowników powodujące zmianę danych o filmach, seansach, rezerwacjach, biletach i płatnościach są trwale rejestrowane w systemie.
+N04)
+Dane systemu są przechowywane w relacyjnej bazie danych, z zachowaniem ich integralności i spójności.
+N05)
+Wszystkie informacje o działalności kina są przechowywane w systemie w postaci znormalizowanej.
+N06)
+Wszystkie działania Pracownika Kina w systemie może też wykonać Kierownik Kina.
+N07)
+Tylko Pracownik Kina lub Kierownik Kina może zarządzać danymi filmów i seansów, a tylko Kierownik Kina może zarządzać danymi kin, sal kinowych, miejsc i typów seansów.
+N08)
+Warunkiem rezerwacji miejsca na seans jest dostępność tego miejsca oraz nierozpoczęcie się seansu.
+N09)
+Jedno miejsce na danym seansie może być objęte najwyżej jedną aktywną rezerwacją lub jednym sprzedanym biletem.
+N10)
+Klient może anulować wyłącznie własną aktywną rezerwację, która nie została jeszcze wykorzystana do zakupu biletu.
+N11)
+Warunkiem zakupu biletu na miejsce jest dostępność tego miejsca albo posiadanie przez klienta aktywnej rezerwacji tego miejsca.
+N12)
+Zakup biletu na wcześniej zarezerwowane miejsce powoduje zakończenie rezerwacji tego miejsca.
+N13)
+Warunkiem zakończenia zakupu biletu jest poprawne zarejestrowanie wymaganej płatności.
+N14)
+Cena biletu uwzględnia cenę podstawową oraz dopłatę wynikającą z typu seansu.
+N15)
+Każdy seans dotyczy dokładnie jednego filmu, odbywa się w dokładnie jednej sali kinowej i posiada dokładnie jeden typ seansu.
+N16)
+Warunkiem utworzenia lub zmiany seansu jest brak kolizji czasowej z innym seansem odbywającym się w tej samej sali kinowej.
+N17)
+Miejsce udostępnione do rezerwacji lub sprzedaży na dany seans musi należeć do sali kinowej, w której odbywa się ten seans.
+N18)
+Liczba miejsc dostępnych na seans nie może przekraczać liczby miejsc znajdujących się w sali kinowej, w której odbywa się seans.
+N22)
+Seans posiadający aktywne rezerwacje lub sprzedane bilety nie może zostać usunięty bez wcześniejszego zakończenia obsługi tych rezerwacji i biletów.
+N23)
+Każda płatność dotyczy określonego zakupu biletów i posiada jednoznacznie określony status.
